@@ -6,7 +6,7 @@ const Navber = () => {
   console.log(menu);
   return (
     <div className="navber">
-      <img src={assets.logo} alt="" />
+      <img className="log" src={assets.logo} alt="" />
       <ul className="navber-menu ">
         <li
           onClick={() => setMenu("home")}

@@ -41,7 +41,8 @@
 }
 .navber .active {
   padding-bottom: 2px;
-  border-bottom: 2px solid #49557e;
+  border-bottom: 2px solid tomato;
+  direction: 4s;
 }
 .navber li {
   cursor: pointer;
@@ -71,4 +72,20 @@
   border-radius: 5px;
   top: -8px;
   right: -8px;
+}
+
+@media (max-width: 1050px) {
+  .navber .logo {
+    width: 140px;
+  }
+  .navber-menu {
+    gap: 20px;
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 750px) {
+  .navber-menu {
+    display: none;
+  }
 }

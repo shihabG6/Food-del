@@ -1,5 +1,5 @@
 import { createContext, useState } from "react";
-import { food_list } from "../assets/assets";
+import { food_list,assets } from "../assets/assets";
 
 export const StoreContext = createContext(null);
 
@@ -18,6 +18,7 @@ const StoreContextProvider = (props) => {
 
   const contextValue = {
     food_list,
+    assets,
     cartItems,
     setCartItems,
     addToCart,

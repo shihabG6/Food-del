@@ -1,7 +1,7 @@
 .food_item{
     width: 100%;
     margin: auto;
-    border-radius: 50px 0px 50px 0px;
+    border-radius: 50px 15px 50px 0px;
     box-shadow: 0px 0px  15px #00000015;
     transition: 0.3s;
     animation: fadeIn 1s;
@@ -13,6 +13,7 @@
     border-radius:15px 15px 0px 0px ;
 }
 .food_item_info{
+    height: 20vh;
     padding: 20px;
 }
 .food_item_name_rating{
