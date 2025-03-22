@@ -1,20 +1,37 @@
 import React, { useState } from "react";
-
-import "./Navber.css";
 import { assets } from "../../assets/assets";
+import "./Navber.css";
 const Navber = () => {
-  const [menu, setMenu] = useState("");
+  const [menu, setMenu] = useState("home");
+  console.log(menu);
   return (
     <div className="navber">
-      <div className="logo">FoodFrame</div>
-      <ul className="navber-menu">
-        <li>Home</li>
-        <li>menu</li>
-        <li>contact-us</li>
+      <img src={assets.logo} alt="" />
+      <ul className="navber-menu ">
+        <li
+          onClick={() => setMenu("home")}
+          className={menu === "home" ? "active" : ""}
+        >
+          Home
+        </li>
+
+        <li
+          onClick={() => setMenu("menu")}
+          className={menu === "menu" ? "active" : ""}
+        >
+          menu
+        </li>
+
+        <li
+          onClick={() => setMenu("contact-us")}
+          className={menu === "contact-us" ? "active" : ""}
+        >
+          contact-us
+        </li>
       </ul>
       <div className="navber_right">
         <div className="navber-search-icon">
-          <img src={assets.twitter_icon} alt="" />
+          <img src={assets.basket_icon} alt="" />
           <div className="dot"></div>
         </div>
         <button className="navber_button">Sign in</button>
