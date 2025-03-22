@@ -5,18 +5,19 @@ import Home from "./pages/Home/home";
 import Cart from "./pages/Cart/cart";
 import PlaceOrder from "./pages/PlaceOrder/PlaceOrder";
 import Footer from "./components/Footer/Footer";
-const App = ()=>{
-    return(
-        <div className="app">
-        <Navber/>
+const App = () => {
+  return (
+    <div className="">
+      <div className="app">
+        <Navber />
         <Routes>
-            <Route path="/" element={<Home/>}/>
-            <Route path="/cart" element={<Cart/>}/>
-            <Route path="/order" element={<PlaceOrder/>}/>
+          <Route path="/" element={<Home />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/order" element={<PlaceOrder />} />
         </Routes>
-        <Footer/>
-        
-        </div>
-    )
-}
+      </div>
+      <Footer />
+    </div>
+  );
+};
 export default App;

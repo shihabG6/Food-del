@@ -5,6 +5,14 @@
   align-items: center;
   position: relative;
 }
+.logo{
+  width: 8vw;
+  height: 8vh;
+  background-image: url(../../assets/logoo.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 
 .navber-logo h3 {
   color: tomato;
